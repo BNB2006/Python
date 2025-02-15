@@ -71,5 +71,12 @@ print(myTuple2)
 
 # h. For the following tuple remove all occurrences of the value 20 and display the new tuple.
 # thistuple = (10, 20, 30, 40, 20, 50, 20, 60, 70, 20)
+# newList = list(thistuple)
+# newList = [item for item in newList if item != 20]
+# thistuple = tuple(newList)
+# print(thistuple)
 
-# i. For thistuple = (5, 15, 25, 35, 45, 55, 65, 75, 85, 95), find and display the maximum and minimum value.
+# i. For the following tuple , find and display the maximum and minimum value.
+thistuple = (5, 15, 25, 35, 45, 55, 65, 75, 85, 95)
+print("The maximum value in the tuple is :",max(thistuple))
+print("The minimum value in the tuple is :",min(thistuple))
