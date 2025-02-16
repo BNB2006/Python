@@ -8,3 +8,4 @@ elif mark >40:
     print("B")
 else:
     print("Fail")
+    
