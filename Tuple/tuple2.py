@@ -24,6 +24,8 @@ myTuple2+=extraDays
 print(myTuple2)
 
 # f. Repeat the tuple twice and display the new tuple.
+newTuple=myTuple2*2
+print(newTuple)
 
 # g. Convert the tuple into a list and add a new item “Workday” to it, then convert it back to a tuple.
 newList=list(myTuple2)
