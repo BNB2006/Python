@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Template Example</title>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <!-- This is form  -->
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+
+    <!-- The static field image -->
+    <!-- <img src="{% static '/demon_slayer.jpg' %}" alt="Demon slayer" height="500px" width="700px">
+    <h2>Welcome to Django Templates!</h2> -->
+</body>
+</html>
