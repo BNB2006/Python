@@ -3,6 +3,7 @@
 class ZeroNotAllowed(Exception):
     def __init__(self, message):
         super().__init__(message)
+        
 try:
     num = int(input("Enter a number: "))
     if num == 0:

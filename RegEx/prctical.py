@@ -6,7 +6,7 @@ str = "simple is better than complex."
 # Q1. Write a program to check if the string starts with "simple" and end with “complex”.
 x = re.search("^simple.*complex\\.$", str)
 if x:
-    print("Yes!, the string Not starts with 'simple' and end with 'complex'")
+    print("Yes!, the string starts with 'simple' and end with 'complex'")
 else:
     print("No, the string Not starts with 'simple' and end with 'complex'")
 

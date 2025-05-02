@@ -1,0 +1,27 @@
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+    <meta charset="UTF-8">   
+    <title>Index</title>  
+    {% load static %}   
+</head>   
+<body>   
+    <form method="POST" action="/emp">   
+        {% csrf_token %}   
+        <h3>Enter Details</h3>   
+        <label>Employee Id:</label>   
+        {{ form.eid }}   
+        <br><br>   
+        <label>Employee Name:</label>   
+        {{ form.ename }}   
+        <br><br>   
+        <label>Employee Email:</label>   
+        {{ form.eemail }}   
+        <br><br>   
+        <label>Employee Contact:</label>   
+        {{ form.econtact }}   
+        <br><br>   
+        <button type="submit">Submit</button>   
+    </form>   
+</body>  
+</html>

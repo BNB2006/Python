@@ -10,6 +10,7 @@ def isPrime(num):
         print(f"The {num} is Prime number")
     else:
         print(f"The {num} is not a prime number")
+        
 
 num = int(input("Enter a number :"))
 isPrime(num)

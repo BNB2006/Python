@@ -23,5 +23,6 @@ def main():
     child = Student("Balaji", "2307003", "IT", "2nd")
     child.details()
 
+
 if __name__ == main():
     main()

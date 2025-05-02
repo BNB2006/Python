@@ -3,7 +3,7 @@
 # otherwise print message “Your eligible for voting”. 
 
 class invalidAgeError(Exception):
-    def __init__(self, age, message):
+    def __init__(self, message):
         self.age = age
         self.message = message
         super().__init__(self.message)
@@ -12,7 +12,7 @@ try:
     age = int(input("Enter your age: "))
 
     if age < 18:
-        raise invalidAgeError(age, "You can not vote")
+        raise invalidAgeError("You can not vote")
     
     print("You can vote")
 

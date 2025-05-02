@@ -1,0 +1,23 @@
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+    <meta charset="UTF-8">   
+    <title>Employee Records</title>   
+</head>   
+<body>   
+    <h2>Employee Records</h2>   
+    {% for employee in employees %}   
+        <div>   
+            <strong>Employee ID:</strong> {{ employee.eid }} <br>   
+            <strong>Employee Name:</strong> {{ employee.ename }} <br>   
+            <strong>Employee Email:</strong> {{ employee.eemail }} <br>   
+            <strong>Employee Contact:</strong> {{ employee.econtact }} <br>   
+            <a href="/edit/{{ employee.id }}">Update</a> |   
+            <a href="/delete/{{ employee.id }}">Delete</a>   
+        </div>   
+        <hr>   
+    {% endfor %}   
+    <br>   
+    <center><a href="/emp">Add New Record</a></center>   
+</body>   
+</html>   

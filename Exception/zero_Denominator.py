@@ -1,3 +1,8 @@
+# Q1. Write a program to division of number and input are taken from user. If
+# user enter the value of denominator as 0 then show exception that
+# "Denominator zero not allowed” otherwise show the result. 
+
+
 try:
     numarator = float(input("Enter the Numarator: "))
     denominator = float(input("Enter the Denominator: "))
