@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect   
 from employee.forms import EmployeeForm   
 from employee.models import Employee   
-# Create your views here.   
+# Create your views here.  
+# create 
 def emp(request):   
     if request.method == "POST":   
         form = EmployeeForm(request.POST)   
